@@ -13,8 +13,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="./script.js"></script>
+  <script defer src="./script.js"></script>
   <title>Collections</title>
 </head>
 
@@ -102,6 +103,25 @@
       <path
         d="M100-328q-23 0-41.5-18.5T40-388v-82q0-11 2.5-25.5T50-521l116-268q9-21 29.5-36t43.5-15h407q25 0 42.5 17.5T706-780v428q0 11-4.5 22T689-311L482-93q-14 14-33.5 17T412-83q-17-10-25.5-28t-4.5-37l38-180H100Zm723-512q23 0 40 17t17 40v398q0 23-17 40t-40 17q-23 0-40-17t-17-40v-398q0-23 17-40t40-17Z" />
     </symbol>
+    <symbol id="MF" viewBox="-6.8887712 -3.69853465 81.96659882 46.80035628">
+      <path
+        d="m20.7 8.3a51.47 51.47 0 0 1 9.34 1c2.9.55 5.85 1.56 8.83 1.55 2.28 0 4.12-1.6 4.1-3.53s-1.85-3.57-4.17-3.56a13.35 13.35 0 0 0 -3.9.65c.33-.23.66-.47 1-.68a26.14 26.14 0 0 1 15.1-3.68c5.6.26 11.46 2 15.8 5.72a19.9 19.9 0 0 1 6.62 17.82 19.75 19.75 0 0 1 -12.17 15.07 24 24 0 0 1 -14.45.52c-6.2-1.58-11.64-5-17.48-7.54a46.86 46.86 0 0 0 -10.57-2.68h.05a9 9 0 0 0 4.1-.7c1.74-.83 1.73-2.83.83-4.3-1.07-1.73-3.23-2.44-5.1-3a24.36 24.36 0 0 0 -10-.48 15.06 15.06 0 0 0 -6.83 2.52 5.67 5.67 0 0 0 -1.8 2.2c3.08-8.53 9.2-7.57 13-9.9a2.16 2.16 0 0 0 -1.57-3.94 7.24 7.24 0 0 0 -2.92 1.46l-.85.65s3.04-5.17 13.04-5.17z"
+        fill="#07f" />
+      <path
+        d="m23.64 23.78.06.06zm32.46-10.73c-4.08 0-5.76 2.57-10.18 5-7.65 4.18-12.2 2.4-12.2 2.62s3.1 1.53 10.7 5.22a27 27 0 0 0 11.73 3.15 8 8 0 1 0 0-16z"
+        fill="#fff" />
+    </symbol>
+    <symbol id="MSN" enable-background="new 0 0 2499.6 2500" viewBox="0 0 2499.6 2500">
+      <path d="m1187.9 1187.9h-1187.9v-1187.9h1187.9z" fill="#f1511b" />
+      <path d="m2499.6 1187.9h-1188v-1187.9h1187.9v1187.9z" fill="#80cc28" />
+      <path d="m1187.9 2500h-1187.9v-1187.9h1187.9z" fill="#00adef" />
+      <path d="m2499.6 2500h-1188v-1187.9h1187.9v1187.9z" fill="#fbbc09" />
+    </symbol>
+
+    <symbol id="backtoup" viewBox="-1 0 19 19"> fill="currentColor">
+      <path
+        d="M16.416 9.579A7.917 7.917 0 1 1 8.5 1.662a7.916 7.916 0 0 1 7.916 7.917zm-2.548 1.225L9.06 5.996a.792.792 0 0 0-1.12 0l-4.808 4.808a.792.792 0 0 0 1.12 1.12L8.5 7.675l4.248 4.249a.792.792 0 0 0 1.12-1.12z" />
+    </symbol>
   </svg>
 
   <nav>
@@ -114,7 +134,7 @@
         </a>
       </li>
       <li>
-        <a href="">
+        <a href="" onclick="ShowContent('Home')">
           <img
             src="https://camo.githubusercontent.com/b10861f680389553f5668180d05017ef5f660a782cfbe8c546896b8aca59be3b/68747470733a2f2f666f6e746d656d652e636f6d2f7065726d616c696e6b2f3232303931312f32623636363133643832393065306633656431643736343030663637663937322e706e67"
             alt="">
@@ -156,21 +176,21 @@
         </a>
       </li>
       <li class="hideLabel">
-        <a href="">
+        <a href="#CrackApplications">
           <img
             src="https://camo.githubusercontent.com/b10861f680389553f5668180d05017ef5f660a782cfbe8c546896b8aca59be3b/68747470733a2f2f666f6e746d656d652e636f6d2f7065726d616c696e6b2f3232303931312f32623636363133643832393065306633656431643736343030663637663937322e706e67"
             alt="">
         </a>
       </li>
       <li class="hideLabel">
-        <a href="">
+        <a href="#VisualStudio">
           <img
             src="https://camo.githubusercontent.com/40fb7bd353e33cdc3c4617185d0571d4542277b098f631b3f8d27c03bd20f80a/68747470733a2f2f666f6e746d656d652e636f6d2f7065726d616c696e6b2f3232303931312f62646665616564343430663338383465636439396434636637393438653035342e706e67"
             alt="">
         </a>
       </li>
       <li class="hideLabel">
-        <a href="">
+        <a href="#SQLServer">
           <img
             src="https://camo.githubusercontent.com/a2f56937db743edfc306a927f96327cad40b66a7a51ea9768021d903d5c82d57/68747470733a2f2f666f6e746d656d652e636f6d2f7065726d616c696e6b2f3232303931312f34363561333666383931623463303465336130343830323066393262613336622e706e67"
             alt="">
@@ -205,9 +225,212 @@
         function HideSidebars() {
           $(".sidebars").css("display", "none");
         }
+
+        const keyQueue = [];
+
+        function CopyKey(key) {
+          keyQueue.push(key);
+          if (keyQueue.length === 1) {
+            processQueue();
+          }
+        }
+
+        function processQueue() {
+          const key = keyQueue[0];
+          navigator.clipboard.writeText(key);
+          Swal.mixin({
+            toast: true,
+            position: 'top',
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+          }).fire({
+            icon: 'success',
+            title: "'" + key + "'<br><br> Has been copied to your clipboard.",
+            didClose: () => {
+              keyQueue.shift();
+              if (keyQueue.length > 0) {
+                processQueue();
+              }
+            }
+          });
+        }
       </script>
     </ul>
   </nav>
+
+  <span class="backtptop" onclick="window.scrollTo(0, 0)">
+    <svg width="26" height="26">
+      <use xlink:href="#backtoup" />
+    </svg>
+  </span>
+
+  <div class="container-fluid mb-5">
+    <div class="hero fade">
+      <div class="bg-blur-10 rounded-3 p-5 m-5 out">
+        <img
+          src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=64&duration=6000&pause=1000&color=E62401&center=true&vCenter=true&random=true&width=680&height=62&lines=UNKNOWNPLANET40"
+          alt="Typing SVG" />
+        <img
+          src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=32&duration=6000&pause=1000&color=C81F01&center=true&random=true&width=680&height=48&lines=COLLECTIONS"
+          alt="Typing SVG" />
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="VisualStudio">
+    <div class="out">
+      <h2>𝗩𝗶𝘀𝘂𝗮𝗹 𝗦𝘁𝘂𝗱𝗶𝗼 𝗣𝗿𝗼𝗱𝘂𝗰𝘁 𝗞𝗲𝘆𝘀</h2>
+      <small class="text-muted">Note: You can click on the key to copy it to your clipboard.</small>
+    </div>
+    <div class="list-group my-5">
+      <div class="list-group-item list-group-item-action in" aria-current="true">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Visual Studio 2015</h5>
+          <small class="text-body-secondary">
+            <a href="https://www.mediafire.com/file/99wr70h2v8zkk9g/Visual_Stodio_Professional_2015_x86_%2526_x64_%2528Offline_Installer%2529.zip/file"
+              target="_blank" rel="noopener noreferrer" class="link-underline link-underline-opacity-0">
+              <svg width="32" height="32">
+                <use xlink:href="#MF" />
+              </svg>
+            </a>
+            <div class="vr"></div>
+            <a href="https://my.visualstudio.com/Downloads?q=visual%20studio%202015&wt.mc_id=o~msft~vscom~older-downloads"
+              target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20">
+                <use xlink:href="#MSN" />
+              </svg>
+            </a>
+          </small>
+        </div>
+        <div class="ms-5">
+          <p class="mb-1">Professional - <span class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('HMGNV-WCYXV-X7G9W-YCX63-B98R2')">HMGNV-WCYXV-X7G9W-YCX63-B98R2</span></p>
+          <p class="mb-1">Enterprise - <span class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('HM6NR-QXX7C-DFW2Y-8B82K-WTYJV')">HM6NR-QXX7C-DFW2Y-8B82K-WTYJV</span> or <span
+              class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('2XNFG-KFHR8-QV3CP-3W6HT-683CH')">2XNFG-KFHR8-QV3CP-3W6HT-683CH</span></p>
+        </div>
+      </div>
+      <div class="list-group-item list-group-item-action in" aria-current="true">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Visual Studio 2017</h5>
+          <small class="text-body-secondary">
+            <a href="https://my.visualstudio.com/Downloads?q=visual%20studio%202017&wt.mc_id=o~msft~vscom~older-downloads"
+              target="_blank" rel="noopener noreferrer" data-bs-toggle="tooltip" data-bs-placement="right"
+              data-bs-trigger="hover focus"
+              data-bs-title="You need to sign in to your Microsoft account to download this product."
+              class="link-underline link-underline-opacity-0">
+              <svg width="20" height="20">
+                <use xlink:href="#MSN" />
+              </svg>
+            </a>
+          </small>
+        </div>
+        <div class="ms-5">
+          <p class="mb-1">Test Professional - <span class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('VG622-NKFP4-GTWPH-XB2JJ-JFHVF')">VG622-NKFP4-GTWPH-XB2JJ-JFHVF</span></p>
+          <p class="mb-1">Professional - <span class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('KBJFW-NXHK6-W4WJM-CRMQB-G3CDH')">KBJFW-NXHK6-W4WJM-CRMQB-G3CDH</span> or <span
+              class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('4F3PR-NFKDB-8HFP7-9WXGY-K77T7')">4F3PR-NFKDB-8HFP7-9WXGY-K77T7</span></p>
+          <p class="mb-1">Enterprise - <span class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('NJVYC-BMHX2-G77MM-4XJMR-6Q8QF')">NJVYC-BMHX2-G77MM-4XJMR-6Q8QF</span> or <span
+              class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('N2VYX-9VR2K-T733M-MWD9X-KQCDF')">N2VYX-9VR2K-T733M-MWD9X-KQCDF</span></p>
+        </div>
+      </div>
+      <div class="list-group-item list-group-item-action in" aria-current="true">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Visual Studio 2019</h5>
+          <small class="text-body-secondary">
+            <a href="https://my.visualstudio.com/Downloads?q=visual%20studio%202019&wt.mc_id=o~msft~vscom~older-downloads"
+              target="_blank" rel="noopener noreferrer" data-bs-toggle="tooltip" data-bs-placement="right"
+              data-bs-trigger="hover focus"
+              data-bs-title="You need to sign in to your Microsoft account to download this product."
+              class="link-underline link-underline-opacity-0">
+              <svg width="20" height="20">
+                <use xlink:href="#MSN" />
+              </svg>
+            </a>
+          </small>
+        </div>
+        <div class="ms-5">
+          <p class="mb-1">Professional - <span class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y')">NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y</span> or <span
+              class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('NJVYC-BMHX2-G77MM-4XJMR-6Q8QF')">NJVYC-BMHX2-G77MM-4XJMR-6Q8QF</span></p>
+          <p class="mb-1">Enterprise - <span class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('BF8Y8-GN2QH-T84XB-QVY3B-RC4DF')">BF8Y8-GN2QH-T84XB-QVY3B-RC4DF</span> or <span
+              class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('KBJFW-NXHK6-W4WJM-CRMQB-G3CDH')">KBJFW-NXHK6-W4WJM-CRMQB-G3CDH</span></p>
+        </div>
+      </div>
+      <div class="list-group-item list-group-item-action in" aria-current="true">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Visual Studio 2022</h5>
+          <small class="text-body-secondary">
+            <a href="https://my.visualstudio.com/Downloads?q=visual%20studio%202022&wt.mc_id=o~msft~vscom~older-downloads"
+              target="_blank" rel="noopener noreferrer" data-bs-toggle="tooltip" data-bs-placement="right"
+              data-bs-trigger="hover focus"
+              data-bs-title="You need to sign in to your Microsoft account to download this product."
+              class="link-underline link-underline-opacity-0">
+              <svg width="20" height="20">
+                <use xlink:href="#MSN" />
+              </svg>
+            </a>
+          </small>
+        </div>
+        <div class="ms-5">
+          <p class="mb-1">Professional - <span class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('TD244-P4NB7-YQ6XK-Y8MMM-YWV2J')">TD244-P4NB7-YQ6XK-Y8MMM-YWV2J</span></p>
+          <p class="mb-1">Enterprise - <span class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('VHF9H-NXBBB-638P6-6JHCY-88JWH')">VHF9H-NXBBB-638P6-6JHCY-88JWH</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="SQLServer">
+    <div class="out">
+      <h2>𝗦𝗤𝗟 𝗦𝗲𝗿𝘃𝗲𝗿 𝗣𝗿𝗼𝗱𝘂𝗰𝘁 𝗞𝗲𝘆𝘀</h2>
+      <small class="text-muted">Note: You can click on the key to copy it to your clipboard.</small>
+    </div>
+
+    <div class="list-group my-5">
+      <div class="list-group-item list-group-item-action in" aria-current="true">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">SQL Server 2017</h5>
+          <small class="text-body-secondary">
+            <a href="https://my.visualstudio.com/Downloads?q=SQL%20Server%202017%20Express%20Edition&wt.mc_id=o~msft~vscom~older-downloads"
+              target="_blank" rel="noopener noreferrer" class="link-underline link-underline-opacity-0">
+              <svg width="20" height="20">
+                <use xlink:href="#MSN" />
+              </svg>
+            </a>
+          </small>
+        </div>
+        <div class="ms-5">
+          <p class="mb-1">Enterprise Core - <span class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('6GPYM-VHN83-PHDM2-Q9T2R-KBV83')">6GPYM-VHN83-PHDM2-Q9T2R-KBV83</span></p>
+          <p class="mb-1">Developer - <span class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('22222-00000-00000-00000-00000')">22222-00000-00000-00000-00000</span></p>
+          <p class="mb-1">Enterprise - <span class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('TDKQD-PKV44-PJT4N-TCJG2-3YJ6B')">TDKQD-PKV44-PJT4N-TCJG2-3YJ6B</span></p>
+          <p class="mb-1">Standard - <span class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('PHDV4-3VJWD-N7JVP-FGPKY-XBV89')">PHDV4-3VJWD-N7JVP-FGPKY-XBV89</span></p>
+          <p class="mb-1">Web - <span class="badge bg-secondary" style="cursor: pointer;"
+              onclick="CopyKey('WV79P-7K6YG-T7QFN-M3WHF-37BXC')">WV79P-7K6YG-T7QFN-M3WHF-37BXC</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="Sublime"></div>
 </body>
 
 </html>

@@ -448,7 +448,7 @@ nav li:first-child {
 }
 
 .hero {
-    background-image: url("https://images.pexels.com/photos/249798/pexels-photo-249798.png");
+    background-image: url("./World\ Map.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

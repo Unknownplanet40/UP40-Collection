@@ -397,22 +397,49 @@ nav li:first-child {
     backdrop-filter: blur(3px);
 }
 
-.in{
+.leftin {
     animation: fly-in linear both;
     animation-timeline: view(block);
-    animation-range: cover 0% cover 35%
+    animation-range: cover 0% cover 30%
+}
+
+.fadein {
+    animation: fade-in linear both;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 30%
+}
+
+.scalein {
+    animation: scale-in linear both;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 30%;
+}
+
+.card-crack {
+    transition: 200ms linear all;
+}
+
+.card-crack:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-crack-rows:has(.card-crack:hover) .card-crack:not(:hover) {
+    opacity: 0.4;
+    filter: blur(2px);
+    filter: grayscale(1);
 }
 
 .out {
     animation: fly-out linear both;
     animation-timeline: view(block);
-    animation-range: cover 65% cover 100%
+    animation-range: cover 70% cover 100%;
 }
 
 .fade {
     animation: fade-out linear both;
     animation-timeline: view(block);
-    animation-range: cover 65% cover 100%
+    animation-range: cover 70% cover 100%;
 }
 
 @keyframes fly-out {
@@ -440,10 +467,34 @@ nav li:first-child {
 @keyframes fly-in {
     from {
         opacity: 0;
+        transform: translateX(-100%);
     }
 
     to {
         opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 

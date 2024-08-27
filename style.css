@@ -421,12 +421,9 @@ nav li:first-child {
 
 .card-crack:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-crack-rows:has(.card-crack:hover) .card-crack:not(:hover) {
-    opacity: 0.4;
-    filter: blur(2px);
     filter: grayscale(1);
 }
 

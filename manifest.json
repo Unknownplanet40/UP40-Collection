@@ -1,0 +1,191 @@
+{
+  "name": "Unknownplanet40: Collections",
+  "short_name": "UP40",
+  "background_color": "#212529",
+  "description": "A collection of crack applications, license keys, programming tutorials, and Windows tips & tricks",
+  "dir": "ltr",
+  "display": "standalone",
+  "orientation": "natural",
+  "scope": "/",
+  "start_url": "/UP40-Collection",
+  "theme_color": "#212529",
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": "narrow"
+  },
+  "shortcuts": [
+    {
+      "name": "Crack Applications",
+      "short_name": "Crack Apps",
+      "url": "/UP40-Collection/#CrackApplications",
+      "description": "A collection of crack applications.",
+      "icons": [
+        {
+          "src": "./Icons/Icon-x96.png",
+          "sizes": "96x96",
+          "type": "image/jpeg",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Visual Studio License Keys",
+      "short_name": "VS Keys",
+      "url": "/UP40-Collection/#VisualStudio",
+      "description": "A collection of Visual Studio license keys.",
+      "icons": [
+        {
+          "src": "./Icons/Icon-x96.png",
+          "sizes": "96x96",
+          "type": "image/jpeg",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "SQL Server License Keys",
+      "short_name": "SQL Keys",
+      "url": "/UP40-Collection/#SQLServer",
+      "description": "A collection of SQL Server license keys.",
+      "icons": [
+        {
+          "src": "./Icons/Icon-x96.png",
+          "sizes": "96x96",
+          "type": "image/jpeg",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Microsoft Office License Keys",
+      "short_name": "MS Office Keys",
+      "url": "/UP40-Collection/#MSOffice",
+      "description": "A collection of Microsoft Office 2016 license keys.",
+      "icons": [
+        {
+          "src": "./Icons/Icon-x96.png",
+          "sizes": "96x96",
+          "type": "image/jpeg",
+          "purpose": "any"
+        }
+      ]
+    },
+    {
+      "name": "Windows Tips & Tricks",
+      "short_name": "WinTricks",
+      "url": "/UP40-Collection/#WinTricks",
+      "description": "A Collection of Windows tips & tricks.",
+      "icons": [
+        {
+          "src": "./Icons/Icon-x96.png",
+          "sizes": "96x96",
+          "type": "image/jpeg",
+          "purpose": "any"
+        }
+      ]
+    }
+  ],
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  },
+  "web_apps": {
+    "navigation_scope": "/UP40-Collection",
+    "scope": "/UP40-Collection",
+    "open_as_window": true
+  },
+  "icons": [
+    {
+      "src": "./Icons/Icon-x512.png",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "./Icons/Icon-x192.png",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "./Icons/Icon-x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "./Icons/Icon-x96.png",
+      "sizes": "96x96",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "./Icons/Icon-x72.png",
+      "sizes": "72x72",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "./Icons/Icon-x48.png",
+      "sizes": "48x48",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "./Icons/Icon-x36.png",
+      "sizes": "36x36",
+      "type": "image/jpeg"
+    }
+  ],
+  "lang": "en",
+  "display_override": ["window-controls-overlay"],
+  "categories": [
+    "education",
+    "productivity",
+    "utilities",
+    "reference"
+  ],
+  "screenshots": [
+    {
+      "src": "./Image/SSW-1.png",
+      "sizes": "1080x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "./Image/SSM-1.png",
+      "sizes": "412x915",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "./Image/SSM-2.png",
+      "sizes": "412x915",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "./Image/SSM-3.png",
+      "sizes": "412x915",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "./Image/SSM-4.png",
+      "sizes": "412x915",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "./Image/SSW-2.png",
+      "sizes": "1080x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "./Image/SSW-3.png",
+      "sizes": "1080x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "./Image/SSW-4.png",
+      "sizes": "1080x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ]
+}

@@ -46,7 +46,6 @@ function processQueue() {
 
 $(document).ready(function () {
 
-
     const crackrows = $("#CrackApps");
     const cards = document.querySelectorAll('.card-crack');
     const types = new Set();
@@ -162,6 +161,18 @@ $(document).ready(function () {
                 }
             });
         }
+    });
+    
+    $(window).on('scroll', function () {
+        var $counter = $('.counterimg');
+        if ($counter.length === 0) return;
+        $counter.each(function () {
+            if ($(window).scrollTop() + $(window).height() >= $(document).height() - 10) {
+            $(this).show().addClass('mb-3');
+            } else {
+            $(this).hide();
+            }
+        });
     });
 });
 
